@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Lingkan Tanan, Full Stack Software Engineering student at RevoU. Explore my projects and learn more about me." />
+  <meta name="author" content="Lingkan Tanan" />
+  <meta name="keywords" content="portfolio, Lingkan Tanan, Full Stack, RevoU, web developer" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="images/favicon.ico" />
   <title>It's Lingkan</title>
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
- 
 </head>
 
 <body>
 
+<header>
   <!-- Navbar -->
-  <div class="navbar">
+  <nav class="navbar">
     <a href="#home" class="active">Home</a>
     <a href="#about">About Me</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-  </div>
+  </nav>
+</header>
 
-  <!-- Main -->
-  <main>
+<main>
 
-    <!-- HOME Section -->
-    <section id="home" class="content">
-     <div class="intro-container" data-aos="fade-up">
-        <div class="intro-text">
-          <h1>Hi! My Name is Lingkan</h1>
-          <p>
-            I'm currently studying in the Full Stack Software Engineering class at RevoU.
-            With increasingly sophisticated technological developments like social media and artificial intelligence, 
-            I feel that the use of applications and AI has become something everyone should know about. 
-            I hope that RevoU Full Stack Software Engineering will help me understand programming better and utilize AI more effectively.
-            Find more <a href="#about" class="linkk">about me..!</a>
-          </p>
-        </div>
+  <!-- HOME Section -->
+  <section id="home" class="content">
+    <div class="intro-container" data-aos="fade-up">
+      <div class="intro-text">
+        <h1>Hi! My Name is Lingkan</h1>
+        <p>
+          I'm currently studying in the Full Stack Software Engineering class at RevoU.
+          With increasingly sophisticated technological developments like social media and artificial intelligence, 
+          I feel that the use of applications and AI has become something everyone should know about. 
+          I hope that RevoU Full Stack Software Engineering will help me understand programming better and utilize AI more effectively.
+          Find more <a href="#about" class="linkk">about me..!</a>
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="pembatas" />
+  <hr class="pembatas" />
 
-    <!-- ABOUT Section -->
-    <section id="about" class="content">
-      <div class="intro-container" data-aos="fade-up">
+  <!-- ABOUT Section -->
+  <section id="about" class="content">
+    <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">About Me</h1>
       <p class="justify">
+        
         My name is Lingkan Tanan.<br />
         I graduated from a state vocational high school in 2014. During high school, 
         I worked on several blog projects using Adobe Dreamweaver as part of school assignments.<br />
-        After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in East Nusa Tenggara.<br />
+        After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in <span class="highlight"> East Nusa Tenggara</span> East Nusa Tenggara.<br />
         <br />
         Want to chat more → Find Me <b><a href="#contact" class="linkk" style="color: black;">here</a></b>
       </p>
-      </div>
-    </section>
+    </div>
+  </section>
+   
+  
+ 
 
-    <hr class="pembatas" />
+  <hr class="pembatas" />
 
-    <!-- PROJECTS Section -->
-    <section id="projects" class="content">
-      <div class="intro-container" data-aos="fade-up">
+  <!-- PROJECTS Section -->
+  <section id="projects" class="content">
+    <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">Projects</h1>
       <p>This section will showcase all of my coding and design projects.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="pembatas" />
+  <hr class="pembatas" />
 
-    <!-- CONTACT Section -->
-    <section id="contact" class="content">
+  <!-- CONTACT Section -->
+  <section id="contact" class="content">
+    <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">Contact Me</h1>
-      <p>You can reach me via email : </p>
-      <section id="contact" class="content">
+      <p>You can reach me via email:</p>
 
- <form
-  action="https://formspree.io/f/mblkrlrv"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email" autocomplete="off">
-  </label>
-  <label>
-    Your name:
-    <input type="text" name="name" autocomplete="off">
-  </label>
-    Your message:
-    <textarea name="message"></textarea autocomplete="off">
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-</section>
+      <form action="https://formspree.io/f/mblkrlrv" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" autocomplete="off">
+        </label>
+        <label>
+          Your name:
+          <input type="text" name="name" autocomplete="off">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" autocomplete="off"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-    </section>
+</main>
 
-  </main>
+<footer>
+  <p>© 2025 Lingkan. All rights reserved.</p>
+</footer>
 
-  <!-- AOS Library -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1500,
-      once: false
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,
+    once: false
+  });
+</script>
+
+<!-- Scroll-based active menu -->
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").substring(1) === entry.target.id) {
+            link.classList.add("active");
+          }
+        });
+      }
     });
-  </script>
+  }, {
+    threshold: 0.5
+  });
 
-  <!-- Scroll-based active menu -->
-  <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".navbar a");
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").substring(1) === entry.target.id) {
-              link.classList.add("active");
-            }
-          });
-        }
-      });
-    }, {
-      threshold: 0.5 // Trigger saat 50% area section terlihat
-    });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-
-
-
-    
-  </script>
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
