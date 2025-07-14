@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>It's Lingkan </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Lingkan Tanan, Full Stack Software Engineering student at RevoU. Explore my projects and learn more about me." />
+  <title>It's Lingkan</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+ 
 </head>
 
 <body>
@@ -22,17 +21,12 @@
     <a href="#contact">Contact</a>
   </div>
 
-  <!-- HOME Section -->
+  <!-- Main -->
   <main>
-    <section id="home" class="content">
-      <div class="intro-container" data-aos="fade-up">
-        <div class="intro-image">
-          <picture>
-            <source media="(min-width: 650px)" srcset="https://uploads.onecompiler.io/43q5w8sg6/43q5bkwud/download%20(1).jpeg">
-            <img src="https://uploads.onecompiler.io/43q5w8sg6/43q5bkwud/download%20(1).jpeg" alt="Foto Lingkan">
-          </picture>
-        </div>
 
+    <!-- HOME Section -->
+    <section id="home" class="content">
+     <div class="intro-container" data-aos="fade-up">
         <div class="intro-text">
           <h1>Hi! My Name is Lingkan</h1>
           <p>
@@ -50,6 +44,7 @@
 
     <!-- ABOUT Section -->
     <section id="about" class="content">
+      <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">About Me</h1>
       <p class="justify">
         My name is Lingkan Tanan.<br />
@@ -59,14 +54,17 @@
         <br />
         Want to chat more → Find Me <b><a href="#contact" class="linkk" style="color: black;">here</a></b>
       </p>
+      </div>
     </section>
 
     <hr class="pembatas" />
 
     <!-- PROJECTS Section -->
     <section id="projects" class="content">
+      <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">Projects</h1>
-      <p>Coming soon! This section will showcase all of my coding and design projects.</p>
+      <p>This section will showcase all of my coding and design projects.</p>
+      </div>
     </section>
 
     <hr class="pembatas" />
@@ -74,8 +72,31 @@
     <!-- CONTACT Section -->
     <section id="contact" class="content">
       <h1 class="h1">Contact Me</h1>
-      <p>You can reach me via email or follow me on social media. Form contact coming soon!</p>
+      <p>You can reach me via email : </p>
+      <section id="contact" class="content">
+
+ <form
+  action="https://formspree.io/f/mblkrlrv"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email" autocomplete="off">
+  </label>
+  <label>
+    Your name:
+    <input type="text" name="name" autocomplete="off">
+  </label>
+    Your message:
+    <textarea name="message"></textarea autocomplete="off">
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</section>
+
     </section>
+
   </main>
 
   <!-- AOS Library -->
@@ -85,6 +106,35 @@
       duration: 1500,
       once: false
     });
+  </script>
+
+  <!-- Scroll-based active menu -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) === entry.target.id) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger saat 50% area section terlihat
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+
+
+    
   </script>
 
 </body>

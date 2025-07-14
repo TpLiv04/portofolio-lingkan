@@ -1,50 +1,60 @@
-/* Reset dan dasar */
+
 * {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("images/background-purple.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.5 ;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: left;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
   padding: 10px 20px;
   position: sticky;
-  top: 10px;
+  top: 0;
   z-index: 1000;
   border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
 }
 
 .navbar a {
-  color: black;
+  color: #4b0082;
   margin-right: 15px;
   padding: 10px 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  border-radius: 4px;
+  background-color: #e3d4f3;
+  border-radius: 6px;
+  color: #2c003e;
 }
 
 .navbar a.active {
-  background-color: #ccc;
-  border-radius: 4px;
+  background-color: #d2b8f3;
+  border-radius: 6px;
+  color: white;
+  
 }
 
 /* Content Section */
@@ -52,6 +62,9 @@ html {
   max-width: 1000px;
   margin: auto;
   padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Intro/Home Section */
@@ -71,7 +84,8 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro-text {
@@ -82,22 +96,26 @@ html {
 .intro-text h1 {
   font-size: 32px;
   margin-bottom: 15px;
-  color: #222;
+  color: #4b0082;
 }
 
 .intro-text p {
   font-size: 18px;
   text-align: justify;
   line-height: 1.8;
+  color: #444;
 }
 
+/* Link Khusus */
 a.linkk {
   text-decoration: none;
   font-weight: bold;
-  color: #007bff;
+  color: #b57edc;
+  transition: color 0.3s ease;
 }
 
 a.linkk:hover {
+  color: #9e58c5;
   text-decoration: underline;
 }
 
@@ -105,7 +123,7 @@ a.linkk:hover {
 .h1 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #222;
+  color: #4b0082;
 }
 
 /* Paragraph Formatting */
@@ -113,15 +131,17 @@ a.linkk:hover {
   text-align: justify;
   font-size: 18px;
   line-height: 1.8;
+  color: #444;
 }
 
 /* Separator */
 hr.pembatas {
   border: none;
   height: 3px;
-  background-color: #ccc;
+  background-color: #bca9df;
   width: 100%;
   margin: 60px 0;
+  border-radius: 6px;
 }
 
 /* Responsive */
@@ -149,4 +169,24 @@ hr.pembatas {
     width: 100%;
     padding: 10px;
   }
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #7e57c2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #673ab7;
 }
