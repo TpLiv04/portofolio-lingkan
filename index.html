@@ -20,56 +20,73 @@
 <body>
 
 <header>
-  <!-- Navbar -->
+
+
+
+
+   <!-- Navbar -->
   <nav class="navbar">
-    <a href="#home" class="active">Home</a>
+    <a href="#home">Home</a>
     <a href="#about">About Me</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  
+
+  
 </header>
+ 
+
 
 <main>
 
   <!-- HOME Section -->
+   <video autoplay muted loop playsinline class="background-video">
+    <source src="Video/backgroundv.mp4" type="video/mp4" />
+  </video>
+
+
+<div class="intro-container" data-aos="fade-up"> 
+  
   <section id="home" class="content">
-    <div class="intro-container" data-aos="fade-up"> 
+    
       
-      <div style="height: 200px;">
-      <div class="intro-text">
-        <h1>Hi! My Name is Lingkan</h1>
+     
+       <div class="intro-text">
+        <h1 class ="h1" >Hi! My Name is Lingkan</h1>
         <p>
           I'm currently studying in the Full Stack Software Engineering class at RevoU.
           With increasingly sophisticated technological developments like social media and artificial intelligence, 
           I feel that the use of applications and AI has become something everyone should know about. 
           I hope that RevoU Full Stack Software Engineering will help me understand programming better and utilize AI more effectively.
-          Find more <a href="#about" class="linkk">about me..!</a>
+          <a href="#about" class="linkk">Find more about me..!</a>
         </p>
+     
       </div>
     </div>
 
     </div>
   </section>
 
-  <hr class="pembatas" />
+
+
 
   <!-- ABOUT Section -->
   <section id="about" class="content">
     <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">About Me</h1>
       <p class="justify">
-        
-        My name is Lingkan Tanan.<br />
-        I graduated from a state vocational high school in 2014. During high school, 
-        I worked on several blog projects using Adobe Dreamweaver as part of school assignments.<br />
-        After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in <span class="highlight"> East Nusa Tenggara</span> East Nusa Tenggara.<br />
+       My name is Lingkan Tanan.
+       <br> I graduated from a state vocational high school in 2014. During high school, 
+        I worked on several blog projects using Adobe Dreamweaver as part of school assignments. After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in <span class="highlight"> East Nusa Tenggara</span> East Nusa Tenggara.<br />
         <br />
         Want to chat more → Find Me <b><a href="#contact" class="linkk" style="color: black;">here</a></b>
       </p>
     </div>
   </section>
    
-  
+   
  
 
   <hr class="pembatas" />
@@ -78,7 +95,13 @@
   <section id="projects" class="content">
     <div class="intro-container" data-aos="fade-up">
       <h1 class="h1">Projects</h1>
-      <p>This section will showcase all of my coding and design projects.</p>
+      <p class="justify">
+      I have worked on several projects during my studies at RevoU. 
+        These projects include web applications, mobile applications, and other software development tasks. 
+        Each project has helped me improve my skills in programming, design, and problem-solving.
+   
+        <b>Projects section below will showcase all of my coding and design projects.</b>
+      <p> section will showcase all of my coding and design projects.</p>
     </div>
   </section>
 
@@ -86,9 +109,10 @@
 
   <!-- CONTACT Section -->
   <section id="contact" class="content">
-    <div class="intro-container" data-aos="fade-up">
+     <br class="intro-container" data-aos="fade-up">
       <h1 class="h1">Contact Me</h1>
-      <p>You can reach me via email:</p>
+      <p class="justify">
+         can reach me via email:</p>
 
       <form action="https://formspree.io/f/mblkrlrv" method="POST">
         <label>
@@ -118,10 +142,11 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1500,
+    duration: 3000,
     once: false
   });
 </script>
+
 
 <!-- Scroll-based active menu -->
 <script>
