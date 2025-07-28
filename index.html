@@ -2,10 +2,9 @@
 <html lang="id">
 
 <head>
-  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Lingkan Tanan, Full Stack Software Engineering student at RevoU. Explore my projects and learn more about me." />
+  <meta name="description" content="Portfolio of Lingkan Tanan, Full Stack Software Engineering student at RevoU." />
   <meta name="author" content="Lingkan Tanan" />
   <meta name="keywords" content="portfolio, Lingkan Tanan, Full Stack, RevoU, web developer" />
   <meta name="robots" content="index, follow" />
@@ -14,166 +13,139 @@
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
+  <header>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-mode">🌓</button>
+    </nav>
+  </header>
 
+  <main>
+    <!-- HOME Section -->
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="Video/backgroundv.mp4" type="video/mp4" />
+    </video>
 
-
-
-   <!-- Navbar -->
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  
-
-  
-</header>
- 
-
-
-<main>
-
-  <!-- HOME Section -->
-   <video autoplay muted loop playsinline class="background-video">
-    <source src="Video/backgroundv.mp4" type="video/mp4" />
-  </video>
-
-
-<div class="intro-container" data-aos="fade-up"> 
-  
-  <section id="home" class="content">
-    
-      
-     
-       <div class="intro-text">
-        <h1 class ="h1" >Hi! My Name is Lingkan</h1>
-        <p>
-          I'm currently studying in the Full Stack Software Engineering class at RevoU.
-          With increasingly sophisticated technological developments like social media and artificial intelligence, 
-          I feel that the use of applications and AI has become something everyone should know about. 
-          I hope that RevoU Full Stack Software Engineering will help me understand programming better and utilize AI more effectively.
-          <a href="#about" class="linkk">Find more about me..!</a>
-        </p>
-     
+    <section id="home" class="content">
+      <div class="intro-container" data-aos="fade-up">
+        <div class="intro-text">
+          <h1 class="h1">Hi! My Name is Lingkan</h1>
+          <p>
+            I'm currently studying in the Full Stack Software Engineering class at RevoU.
+            With increasingly sophisticated technological developments like social media and artificial intelligence,
+            I feel that the use of applications and AI has become something everyone should know about.
+            I hope that RevoU Full Stack Software Engineering will help me understand programming better and utilize AI more effectively.
+            <a href="#about" class="linkk">Find more about me..!</a>
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+   <hr class="pembatas" />
+    <!-- ABOUT Section -->
+    <section id="about" class="content">
+      <div class="intro-container" data-aos="fade-up">
+        <h1 class="h1">About Me</h1>
+        <p class="justify">
+          My name is Lingkan Tanan.
+          <br>I graduated from a state vocational high school in 2014. During high school,
+          I worked on several blog projects using Adobe Dreamweaver as part of school assignments. After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in
+          <span class="highlight"> East Nusa Tenggara</span> <br />
+          <br />
+          Want to chat more →<b><a href="#contact" class="linkk" style="color: rgba(154, 74, 163, 0.941);">Find Me here</a></b>
+        </p>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <hr class="pembatas" />
 
+    <!-- PROJECTS Section -->
+    <section id="projects" class="content">
+      <div class="intro-container" data-aos="fade-up">
+        <h1 class="h1">Projects</h1>
+        <p class="justify">
+          I have worked on several projects during my studies at RevoU.
+          These projects include web applications, mobile applications, and other software development tasks.
+          Each project has helped me improve my skills in programming, design, and problem-solving.
+        </p>
+      </div>
+      <div class="project-container">
+        <div class="project-card" data-aos="fade-up">
+          <img src="images/1.png" alt="Project 1" />
+          <a href="index.html" class="images">Portofolio</a>
+        </div>
+      </div>
+    </section>
 
+    <hr class="pembatas" />
 
+    <!-- CONTACT Section -->
+    <section id="contact" class="content">
+      <div class="intro-container" data-aos="fade-up">
+        <h1 class="h1">Contact Me</h1>
+      
+        <form action="https://formspree.io/f/mblkrlrv" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" autocomplete="off">
+          </label>
+          <label>
+            Your name:
+            <input type="text" name="name" autocomplete="off">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" autocomplete="off"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-  <!-- ABOUT Section -->
-  <section id="about" class="content">
-    <div class="intro-container" data-aos="fade-up">
-      <h1 class="h1">About Me</h1>
-      <p class="justify">
-       My name is Lingkan Tanan.
-       <br> I graduated from a state vocational high school in 2014. During high school, 
-        I worked on several blog projects using Adobe Dreamweaver as part of school assignments. After graduating, I worked as a waitress at Subasuka Restaurant, and currently work as a civil servant in <span class="highlight"> East Nusa Tenggara</span> East Nusa Tenggara.<br />
-        <br />
-        Want to chat more → Find Me <b><a href="#contact" class="linkk" style="color: black;">here</a></b>
-      </p>
-    </div>
-  </section>
-   
-   
- 
+  <footer>
+    <p>@ 2025 Portfolio Lingkan.</p>
+    <p>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
 
-  <hr class="pembatas" />
+  <!-- AOS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: false
+    });
+  </script>
 
-  <!-- PROJECTS Section -->
-  <section id="projects" class="content">
-    <div class="intro-container" data-aos="fade-up">
-      <h1 class="h1">Projects</h1>
-      <p class="justify">
-      I have worked on several projects during my studies at RevoU. 
-        These projects include web applications, mobile applications, and other software development tasks. 
-        Each project has helped me improve my skills in programming, design, and problem-solving.
-   
-        <b>Projects section below will showcase all of my coding and design projects.</b>
-      <p> section will showcase all of my coding and design projects.</p>
-    </div>
-  </section>
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('toggle-mode');
 
-  <hr class="pembatas" />
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
 
-  <!-- CONTACT Section -->
-  <section id="contact" class="content">
-     <br class="intro-container" data-aos="fade-up">
-      <h1 class="h1">Contact Me</h1>
-      <p class="justify">
-         You can Email Me Here</p>
-
-      <form action="https://formspree.io/f/mblkrlrv" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email" autocomplete="off">
-        </label>
-        <label>
-          Your name:
-          <input type="text" name="name" autocomplete="off">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message" autocomplete="off"></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p text-align = "center" > 2025 Lingkan. All rights reserved.</p>
-</footer>
-
-<!-- AOS Library -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 3000,
-    once: false
-  });
-</script>
-
-
-<!-- Scroll-based active menu -->
-<script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".navbar a");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.remove("active");
-          if (link.getAttribute("href").substring(1) === entry.target.id) {
-            link.classList.add("active");
-          }
-        });
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
       }
     });
-  }, {
-    threshold: 0.5
-  });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
+  </script>
 
 </body>
-
 
 </html>

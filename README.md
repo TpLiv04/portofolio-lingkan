@@ -11,18 +11,24 @@ Module 2 Assignment
 ## List Of Pages
 
 - **Home** — (Short Introduction about me) 
-On This page there is a short introduction about me with a ***link*** that leads to the **'About'** page.
+On This page there is a short introduction about me with a ***link*** that leads to the **'About'** page.  
+
+[Picture of Home Page](images/1.png)
+
 
 
 
 - **About Me** — My Profile
-On This page  there is a brief biography that summarizes my education, work experience, skills, and interests. with a ***link*** that leads to the **'Contact'** page
+On This page  there is a brief biography that summarizes my education, work experience, skills, and interests. with a ***link*** that leads to the **'Contact'** page  
+[Picture of About Me Page](images/2.png)
 
 - **Projects** — Showcase proyek
-On This page Supposed to shows my Projects
+On This page Supposed to shows my Projects  
+[Picture of Project Page](images/3.png)
 
 - **Contact** — form for contact 
-On This page  there is a *form action* that integrated with ***formspree*** to send me an email.
+On This page  there is a *form action* that integrated with ***formspree*** to send me an email.  
+[Picture of Contact Page](images/4.png)
 
 
 ---
@@ -38,7 +44,8 @@ On This page  there is a *form action* that integrated with ***formspree*** to s
 ---
 
 ##  Access/Preview
-🌐 You can preview this project here: [Live Demo](https://your-link-here.com)  
+🌐 You can preview this project here: [Home](D:\lingkan\portofolio-lingkan\images\1.png)
+
 📥 Or clone this repo:
 ```bash
 git clone https://github.com/username/portofolio-lingkan.git
