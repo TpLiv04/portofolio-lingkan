@@ -20,9 +20,11 @@ body.dark-mode {
   --footer-bg: #2d1b39;
 }
 
+
+/* margin */
 * {
   margin: 0;
-  padding: 0;
+  padding: 100px , 50px;
   box-sizing: border-box;
 }
 
@@ -100,6 +102,7 @@ header {
   background-color: var(--button-bg);
 }
 
+
 .content {
   max-width: 1000px;
   margin: 100px auto;
@@ -160,6 +163,17 @@ a.linkk:hover {
   text-decoration: underline;
 }
 
+
+  /* Grid project menyesuaikan layar kecil */
+  .project-container,
+  .project-list,
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+
+  
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -267,4 +281,66 @@ footer a {
 
 footer a:hover {
   color: var(--accent-color);
+}
+
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro-text h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .content {
+    padding: 50px 20px;
+    margin: 60px 10px;
+  }
+
+  h1.h1 {
+    font-size: 50px;
+  }
+
+  .project-container,
+  .project-list,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+  a.linkk {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
 }
